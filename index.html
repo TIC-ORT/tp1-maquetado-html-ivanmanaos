@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Resumen HTML</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+        header {
+            background-color: #FFD27F;
+            display: flex;
+            padding: 20px;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            background-color: #FFC75F;
+        }
+        header .texto {
+            margin-left: 20px;
+        }
+        .texto h1 {
+            background-color: #FFB347;
+            width: 200px;
+            height: 20px;
+        }
+        .texto p {
+            background-color: white;
+            height: 10px;
+            margin: 5px 0;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+        .card {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+        .card .inner {
+            width: 60px;
+            height: 60px;
+            margin: auto;
+        }
+        .azul {
+            background-color: #B2EBF2;
+        }
+        .azul .inner {
+            background-color: #80DEEA;
+        }
+        .naranja {
+            background-color: #FF8A65;
+        }
+        .naranja .inner {
+            background-color: #FF7043;
+        }
+        .amarillo {
+            background-color: #FFD54F;
+        }
+        .amarillo .inner {
+            background-color: #FFCA28;
+        }
+        footer {
+            background-color: #eee;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        footer div {
+            width: 100px;
+            height: 40px;
+            background-color: #ddd;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola mundo soy front end</h1>
+    <header>
+        <img src="#" alt="logo">
+        <div class="texto">
+            <h1></h1>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </header>
+    <main>
+        <div class="card azul"><div class="inner"></div></div>
+        <div class="card naranja"><div class="inner"></div></div>
+        <div class="card amarillo"><div class="inner"></div></div>
+        <div class="card amarillo"><div class="inner"></div></div>
+        <div class="card azul"><div class="inner"></div></div>
+        <div class="card naranja"><div class="inner"></div></div>
+    </main>
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
 </body>
 </html>
